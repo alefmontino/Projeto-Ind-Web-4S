@@ -1,0 +1,38 @@
+.color-section {
+    background-image: url('/infrastructure/assets/images/forest-4185387_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.color-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.color1 { background-color: #A49E8D; }
+.color2 { background-color: #504136; }
+.color3 { background-color: #689689; }
+.color4 { background-color: #B2E6D4; }
+.color5 { background-color: #54d885; }
+.color6 { background-color: #30b661; } 
+.color7 { background-color: #ffffff; } 
+.color-label {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
