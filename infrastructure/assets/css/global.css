@@ -55,6 +55,53 @@ p {
   color: #ffffff;
 }
 
+header {
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.footer-container {
+  background-color: #A49E8D;
+  height: 100px;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container footer p {
+  margin: 0;
+  margin-top: 70px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
 .nome-aluno{
   font-size: 18px;
   margin: 10px 0;

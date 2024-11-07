@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -20,10 +19,22 @@
 
 <body>
 
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#projeto-individual">Projeto Individual</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- Atividades -->
     <h1>Sandbox:</h1>
     <p class="nome-aluno">Aluno: Alef Montino</p>
-    <h2>Atividades do Semestre:</h2>
+    <h2 id="atividades">Atividades do Semestre:</h2>
     <hr>
     <div class="button-container">
         <button onclick="location.href='./infrastructure/pages/atividade3/index.html'">
@@ -38,44 +49,54 @@
     <!-- Projeto Individual -->
     <hr>
     <div class="color-section">
-    <h2>Projeto Individual: EcoPoint</h2> 
-    <p class="descricao-pg"> EcoPoint é uma plataforma dedicada a promover o descarte sustentável e consciente
-        de lixo eletrônico, facilitando o acesso a pontos de coleta próximos à sua região. 
-        A iniciativa visa minimizar o impacto ambiental dos resíduos eletrônicos, oferecendo 
-        um guia prático e acessível para quem deseja se desfazer de aparelhos e componentes de 
-        forma responsável.</p>
+        <h2 id="projeto-individual">Projeto Individual: EcoPoint</h2> 
+        <p class="descricao-pg"> EcoPoint é uma plataforma dedicada a promover o descarte sustentável e consciente
+            de lixo eletrônico, facilitando o acesso a pontos de coleta próximos à sua região. 
+            A iniciativa visa minimizar o impacto ambiental dos resíduos eletrônicos, oferecendo 
+            um guia prático e acessível para quem deseja se desfazer de aparelhos e componentes de 
+            forma responsável.</p>
 
-    <p class="descricao-pg"> A cada ano, toneladas de lixo eletrônico são descartadas de maneira incorreta, o que
-        causa contaminação do solo e da água devido aos metais pesados e componentes tóxicos presentes
-         em eletrônicos como celulares, computadores, baterias e outros dispositivos. O EcoPoint foi 
-         criado para resolver essa questão, ajudando a conectar cidadãos conscientes a locais de coleta 
-         adequados e licenciados, promovendo a sustentabilidade e o reaproveitamento de materiais. </p>
+        <p class="descricao-pg"> A cada ano, toneladas de lixo eletrônico são descartadas de maneira incorreta, o que
+            causa contaminação do solo e da água devido aos metais pesados e componentes tóxicos presentes
+            em eletrônicos como celulares, computadores, baterias e outros dispositivos. O EcoPoint foi 
+            criado para resolver essa questão, ajudando a conectar cidadãos conscientes a locais de coleta 
+            adequados e licenciados, promovendo a sustentabilidade e o reaproveitamento de materiais. </p>
 
-    <p class="descricao-pg"> Por meio de uma interface intuitiva e prática, o site permite que os usuários localizem rapidamente 
-        os pontos de coleta mais próximos, consultem informações sobre os tipos de materiais aceitos e recebam
-        dicas sobre a importância do descarte correto. Além disso, o EcoPoint busca conscientizar a comunidade
-        sobre a importância da reciclagem e do descarte adequado, contribuindo para a construção de um futuro
-        mais verde e seguro. </p>
+        <p class="descricao-pg"> Por meio de uma interface intuitiva e prática, o site permite que os usuários localizem rapidamente 
+            os pontos de coleta mais próximos, consultem informações sobre os tipos de materiais aceitos e recebam
+            dicas sobre a importância do descarte correto. Além disso, o EcoPoint busca conscientizar a comunidade
+            sobre a importância da reciclagem e do descarte adequado, contribuindo para a construção de um futuro
+            mais verde e seguro. </p>
     </div>
 
-        <div class="color-palette">
-            <div class="color-circle color1"></div>
-            <div class="color-circle color2"></div>
-            <div class="color-circle color3"></div>
-            <div class="color-circle color4"></div>
-            <div class="color-circle color5"></div>
-            <div class="color-circle color6"></div>
-            <div class="color-circle color7"></div>
-        </div>
-        <div class="color-palette">
-            <strong class="color-label">#A49E8D</strong>
-            <strong class="color-label">#504136</strong>
-            <strong class="color-label">#689689</strong>
-            <strong class="color-label">#B2E6D4</strong>
-            <strong class="color-label">#83E8A8</strong>
-            <strong class="color-label">#30b661</strong>
-            <strong class="color-label">#ffffff</strong>
-        </div>
+    <!-- Paleta de Cores -->
+    <div class="color-palette">
+        <div class="color-circle color1"></div>
+        <div class="color-circle color2"></div>
+        <div class="color-circle color3"></div>
+        <div class="color-circle color4"></div>
+        <div class="color-circle color5"></div>
+        <div class="color-circle color6"></div>
+        <div class="color-circle color7"></div>
+    </div>
+    <div class="color-palette">
+        <strong class="color-label">#A49E8D</strong>
+        <strong class="color-label">#504136</strong>
+        <strong class="color-label">#689689</strong>
+        <strong class="color-label">#B2E6D4</strong>
+        <strong class="color-label">#83E8A8</strong>
+        <strong class="color-label">#30b661</strong>
+        <strong class="color-label">#ffffff</strong>
+    </div>
+
+<!-- Footer -->
+<div class="footer-container">
+    <footer>
+        <p>SandBox &copy; <span>2024</span> - Ambiente de Testes</p>
+    </footer>
+</div>
+
+
 </body>
 
 </html>
