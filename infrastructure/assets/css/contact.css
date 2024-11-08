@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #504136;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#main-content {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+#contact-section {
+    background-color: #B2E6D4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contact-section h1 {
+    color: #504136;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#contact-description {
+    color: #504136;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    font-size: 1.1em;
+    color: #504136;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #689689;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 12px 20px;
+    background-color: #30b661;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #83E8A8;
+}
+
+#contact-info {
+    background-color: #A49E8D;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#contact-info h2 {
+    color: #504136;
+    margin-bottom: 15px;
+}
+
+#contact-info ul {
+    list-style-type: none;
+    color: #504136;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #504136;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}

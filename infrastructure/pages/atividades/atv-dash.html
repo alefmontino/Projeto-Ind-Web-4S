@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Adicionando favicon -->
+    <link rel="shortcut icon" href="./infrastructure/assets/icons/favicon.png" type="image/x-icon">
+    
+    <!-- Título Principal -->
+    <title>HTML 4º Semestre</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="../../assets/css/atvdash.css" />
+
+    </style>
+
+    <script>
+        // Função que exibe o alerta quando o link "Projeto Individual" é clicado
+        function showAlert() {
+            alert("Este projeto está em produção! Em breve, mais informações.");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../home/sandbox.html">Home</a></li>
+                <li><a href="#Atividades">Atividades</a></li>
+                <li><a href="#projeto-individual" onclick="showAlert()">Projeto Individual</a></li>
+                <li><a href="../contact/contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <!-- Introdução -->
+        <section id="sobre">
+            <h2>Bem-vindo ao Portal de Atividades</h2>
+            <p>Esta página é dedicada ao acompanhamento das atividades do 4º semestre. Aqui você encontrará links rápidos para cada atividade e uma breve descrição de cada uma delas.</p>
+        </section>
+
+        <!-- Lista de atividades -->
+        <section id="atividades">
+            <h2>Atividades do Semestre:</h2>
+            <hr>
+            <div class="button-container">
+                <button onclick="location.href='./atv-3.html'">
+                    ATIVIDADE-3
+                </button>
+                <button onclick="location.href='./atv-4.html'">
+                    ATIVIDADE-4
+                </button>
+                <!-- Adicione mais atividades conforme necessário -->
+            </div>
+        </section>
+    </div>
+</body>
+
+<!-- Footer -->
+<div class="footer-container">
+    <footer>
+        <p>SandBox &copy; <span>2024</span> - Ambiente de Testes</p>
+    </footer>
+</div>
+
+</html>
