@@ -16,37 +16,6 @@ body {
     color: #504136;
 }
 
-header {
-    background-color: #333;
-    padding: 10px 20px;
-    color: white;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
-}
-
-.navbar a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
 #main-content {
     padding: 40px 20px;
     background-color: #ffffff;
@@ -111,7 +80,6 @@ header {
 #contact-info {
     background-color: #A49E8D;
     padding: 20px;
-    border-radius: 8px;
     text-align: center;
 }
 

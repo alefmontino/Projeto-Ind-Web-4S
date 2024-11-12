@@ -23,7 +23,7 @@ img {
     object-fit: contain;
 }
 
-h1 {
+.titulo-home {
     color: #504136;
     margin: 10px 0;
     font-size: 2em;
@@ -32,8 +32,8 @@ h1 {
     border-radius: 5px;
 }
 
-h2 {
-  color: #ffffff;
+.subtitulo-home {
+  color: #504136;
   margin: 10px 0;
   font-size: 2em;
   background-color: rgba(255, 255, 255, 0.5);
@@ -42,15 +42,15 @@ h2 {
   text-align: center;
 }
 
-h2 {
-  color: #ffffff;
-  margin: 10px 0;
-  font-size: 2em;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-}
+.subtitulo-sandbox {
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
 
 .cabecalho-atv {
   color: #ffffff;
@@ -78,6 +78,19 @@ p {
     padding: 0 15px;
     color: #333;
 }
+
+.perfil {
+    width: 40px;            
+    height: 40px;           
+    border-radius: 50%;    
+    border: 2px solid #30b661; 
+    display: inline-block;  
+    margin-left: 10px;    
+    background-image: url('../../assets/icons/perfilIcon.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 .descricao-pg {
     font-size: 18px;
@@ -119,7 +132,8 @@ header {
 }
 
 .navbar li {
-    display: inline;
+    display: flex;
+    align-items: center; 
 }
 
 .navbar a {
@@ -132,16 +146,19 @@ header {
 .navbar a:hover {
     background-color: #555;
     border-radius: 5px;
+    color: #B2E6D4;
 }
 
 .footer-container {
     background-color: #A49E8D;
     height: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: auto;
 }
+
 
 .footer-container p {
     color: #ffffff;
@@ -173,4 +190,9 @@ button:hover {
     background-color: #83E8A8;
 }
 
+.content-login{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 

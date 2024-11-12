@@ -1,31 +1,89 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Adicionando favicon -->
-    <link rel="shortcut icon" href="./infrastructure/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./infrastructure/assets/icons/ifbaIcon.png" type="image/x-icon">
 
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="./infrastructure/assets/css/global.css">
+    <link rel="stylesheet" href="./infrastructure/assets/css/paleta.css" />
+    
     <!-- Título Principal -->
-    <title>HTML 4 SEMESTRE</title>
+    <title>4º Semestre - Home</title>
+
+    <script>
+        // Função que exibe o alerta quando o link "Projeto Individual" é clicado
+        function showAlert() {
+            alert("Este projeto está em produção! Em breve, mais informações.");
+        }
+    </script>
+
 </head>
 
 <body>
-    <!-- Título do corpo da página -->
-    <h1>Olá Mundo</h1>
-    <!-- Linha Horizontal -->
-    <hr>
-    <!-- Inicio de paragrafo-->
-    <p>Nascimento do Projeto <br>17/10/2024</p>
 
-    <button onclick="location.href='./infrastructure/pages/atividade3/index.html'">
-        ATIVIDADE-3
-    </button>
-    
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./infrastructure/pages/login/login.html">Login</a></li> 
+                <li><a href="./infrastructure/pages/register/register.html">Registre-se</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="content">
+        <img src="./infrastructure/assets/images/ifba.png" alt="Descrição da imagem" width="500" height="300">
+
+        <p class="cb-dados">Aluno: Alef Pereira Montino</p>
+        <p class="cb-dados">Professor: Jonatas Ferreira Bastos</p>
+        <p class="cb-dados">Disciplina: Programação WEB</p>   
+        
+        <!-- Descrição da disciplina -->
+        <section>
+            <h2 class="subtitulo-home">Sobre a Disciplina</h2>
+            <p>
+                Neste semestre, a disciplina de Programação WEB irá nos guiar pelo desenvolvimento de aplicações modernas para a web.
+                Serão abordados conceitos essenciais e boas práticas de programação voltadas para o ambiente web, usando uma
+                combinação de tecnologias que facilitarão o desenvolvimento, a responsividade e a interação com o usuário.
+            </p>
+            <p>
+                Durante o curso, estudaremos as seguintes tecnologias e ferramentas:
+            </p>
+            <ul>
+                <li><strong>HTML e CSS</strong>: A base para estruturar e estilizar páginas web.</li>
+                <li><strong>JavaScript</strong>: Linguagem de programação essencial para tornar as páginas interativas.</li>
+                <li><strong>Bootstrap</strong>: Biblioteca de CSS que facilita o design responsivo e moderno das páginas.</li>
+                <li><strong>React</strong>: Biblioteca JavaScript para construir interfaces de usuário dinâmicas e reativas.</li>
+                <li><strong>APIs REST</strong>: Integração de dados com fontes externas usando padrões de comunicação web.</li>
+                <li><strong>Git e GitHub</strong>: Ferramentas para controle de versão e colaboração em projetos.</li>
+            </ul>
+            <p>
+                Este conteúdo fornecerá as habilidades e o conhecimento necessários para desenvolver aplicações web profissionais e
+                nos preparará para os desafios do mercado de trabalho na área de tecnologia.
+            </p>
+        </section>
+    </div>
+
+        <button class="content-login" onclick="location.href='./infrastructure/pages/login/login.html'">
+           Login
+        </button>
+        <button class="content-login" onclick="location.href='./infrastructure/pages/register/register.html'">
+            Registre-se
+        </button>
+
 </body>
+
+   <!-- Footer -->
+   <div class="footer-container">
+    <footer>
+        <p>4º Semestre &copy; <span>2024</span> - Ambiente de Estudos Web</p>
+    </footer>
+</div>
 
 </html>

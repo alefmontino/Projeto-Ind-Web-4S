@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="../../assets/css/manager/manager.css">
+    
+    <!-- Adicionando Favicon -->
+    <link rel="shortcut icon" href="../../assets/icons/ifbaIcon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../atividades/atv-dash.html">Atividades</a></li>
+                <li><a href="#projeto-individual" onclick="showAlert()">Projeto Individual</a></li>
+                <li><a href="../contact/contact.html">Contato</a></li>
+                <li><div class="perfil" onclick="location.href='../manager/manager.html'"></div></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="actions">
+            <button class="add-user-btn" onclick="openAddUserModal()">Adicionar Novo Usuário</button>
+            <input class="search" type="text" id="search" placeholder="Pesquisar usuário" onkeyup="searchUser()">
+        </div>
+
+        <!-- Tabela de Usuários -->
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome Completo</th>
+                    <th>Email</th>
+                    <th>Nome de Usuário</th>
+                    <th>Senha</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de usuário -->
+                <tr>
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>joao.silva@email.com</td>
+                    <td>joaosilva</td>
+                    <td>******</td>
+                    <td>
+                        <button class="edit-btn" onclick="editUser(1)">Editar</button>
+                        <button class="delete-btn" onclick="deleteUser(1)">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ana Souza</td>
+                    <td>ana.souza@email.com</td>
+                    <td>anasouza</td>
+                    <td>******</td>
+                    <td>
+                        <button class="edit-btn" onclick="editUser(2)">Editar</button>
+                        <button class="delete-btn" onclick="deleteUser(2)">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Carlos Oliveira</td>
+                    <td>carlos.oliveira@email.com</td>
+                    <td>carlosoliveira</td>
+                    <td>******</td>
+                    <td>
+                        <button class="edit-btn" onclick="editUser(3)">Editar</button>
+                        <button class="delete-btn" onclick="deleteUser(3)">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal Add -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Adicionar Novo Usuário</h2>
+            <form id="userForm">
+                <input type="hidden" id="userId">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" required><br>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required><br>
+
+                <button type="submit" class="save-btn">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS para funcionalidades (Adicionar, Editar, Excluir, Pesquisar) -->
+    <script src="../manager/manager.js"></script>
+</body>
+
+</html>

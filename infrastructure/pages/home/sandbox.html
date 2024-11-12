@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Adicionando favicon -->
-    <link rel="shortcut icon" href="../infrastructure/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/icons/ifbaIcon.png" type="image/x-icon">
 
     <!-- CSS externo -->
     <link rel="stylesheet" href="../../assets/css/global.css">
     <link rel="stylesheet" href="../../assets/css/paleta.css" />
     
     <!-- Título Principal -->
-    <title>HTML 4 SEMESTRE</title>
+    <title>4º Semestre - Sandbox</title>
 
     <script>
         // Função que exibe o alerta quando o link "Projeto Individual" é clicado
@@ -30,10 +30,11 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="../../../index.html">Home</a></li>
                 <li><a href="../atividades/atv-dash.html">Atividades</a></li>
                 <li><a href="#projeto-individual" onclick="showAlert()">Projeto Individual</a></li>
                 <li><a href="../contact/contact.html">Contato</a></li>
+                <li><div class="perfil" onclick="location.href='../manager/manager.html'"></div></li>
             </ul>
         </nav>
     </header>
@@ -41,15 +42,31 @@
     <img src="../../assets/images/ifba.png" alt="Descrição da imagem" width="500" height="300">
 
     <!-- Atividades -->
-    <h1>Sandbox:</h1>
+    <h1 class="titulo-home">Sandbox:</h1>
     <p class="cb-dados">Aluno: Alef Pereira Montino</p>
     <p class="cb-dados">Professor: Jonatas Ferreira Bastos</p>   
     <p class="cb-dados">Disciplina: Programação WEB</p>   
 
+    <hr/>
+
+    <!-- Novidades --> 
+    <h1 class="titulo-home">Novidades:</h1>
+        <ul>
+            <li class="cb-dados">Canal de Novidades Criado.</p>
+            <li class="cb-dados">Navbar melhorado Ícone de perfil.</p>
+            <li class="cb-dados">Criação da pagina de gestao de usuário (simulação), para acessar basta clicar no ícone de perfil.</p>
+            <li class="cb-dados">Tela de Login e Registrar Criada.</p>
+        </ul>
+    <!-- Observaçao --> 
+    <h2 class="titulo-home">Observações:</h2>
+        <ul>
+            <li class="cb-dados">Irei organizar e melhorar os CSS, não fiz essa feature ainda por falta de tempo.</p>
+        </ul>
+
     <!-- Projeto Individual -->
     <hr>
     <div class="pg-section">
-        <h2 id="projeto-individual">Projeto Individual: EcoPoint</h2> 
+        <h2 class="subtitulo-sandbox">Projeto Individual: EcoPoint</h2> 
         <p class="descricao-pg"> EcoPoint é uma plataforma dedicada a promover o descarte sustentável e consciente
             de lixo eletrônico, facilitando o acesso a pontos de coleta próximos à sua região. 
             A iniciativa visa minimizar o impacto ambiental dos resíduos eletrônicos, oferecendo 
@@ -90,13 +107,16 @@
         <strong class="color-label">#ffffff</strong>
     </div>
 
-</body>
-
-<!-- Footer -->
-<div class="footer-container">
+    <!-- Footer -->
+   <div class="footer-container">
     <footer>
-        <p>SandBox &copy; <span>2024</span> - Ambiente de Testes</p>
+        <p>4º Semestre &copy; <span>2024</span> - Ambiente de Estudos Web</p>
     </footer>
 </div>
+
+
+</body>
+
+
 
 </html>
