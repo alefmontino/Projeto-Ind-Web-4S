@@ -196,3 +196,58 @@ button:hover {
     margin-right: auto;
 }
 
+
+@media (min-width: 768px) {
+    .titulo-home, .subtitulo-home, .subtitulo-sandbox, .cabecalho-atv, .titulo-atv {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    .container-img {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    p, .cb-dados, .descricao-pg {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .button-container button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    header {
+        padding: 15px 30px;
+    }
+
+    .footer-container {
+        height: 120px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .titulo-home, .subtitulo-home, .subtitulo-sandbox, .cabecalho-atv, .titulo-atv {
+        font-size: 2.5em;
+        padding: 20px;
+    }
+
+    .container-img {
+        max-height: 500px;
+    }
+
+    p, .cb-dados, .descricao-pg {
+        font-size: 1.2rem;
+        padding: 0 25px;
+    }
+
+    .button-container button {
+        font-size: 20px;
+        padding: 14px 28px;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+}
