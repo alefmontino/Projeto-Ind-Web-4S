@@ -1,0 +1,69 @@
+@import "bootstrap";
+
+$color-primary: #30b661;
+$color-secondary: #689689;
+$color-light: #ffffff;
+$color-dark: #504136;
+$color-highlight: #83e8a8;
+$color-bg: #b2e6d4;
+$color-footer: #504136;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: $color-light;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-section {
+  background-color: $color-primary;
+  min-height: 70vh;
+  color: $color-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    background-color: $color-highlight;
+    border-color: $color-highlight;
+
+    &:hover {
+      background-color: darken($color-highlight, 10%);
+      border-color: darken($color-highlight, 10%);
+    }
+  }
+
+  .btn-outline-light {
+    border-color: $color-light;
+
+    &:hover {
+      background-color: $color-light;
+      color: $color-dark;
+    }
+  }
+}
+
+.footer {
+  background-color: $color-footer;
+  color: $color-light;
+  text-align: center;
+  align-items: end;
+  padding: 1.5rem 0;
+  margin-top: 200px;
+}
